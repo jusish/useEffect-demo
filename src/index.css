@@ -1,11 +1,20 @@
 /* styles.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Your custom styles go here */
 
+:root {
+  --bg-color: #fff;
+}
 
-.darkmode{
-  background-color: rgb(15, 0, 53);
+.dark-mode {
+  --bg-color: #1a202c;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }

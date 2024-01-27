@@ -1,13 +1,18 @@
 import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("The count is: " + count);
+  }, [count]);
 
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col items-center px-10 py-20 bg-blue-600 text-white w-[450px] gap-10 rounded-lg m-10 hover:bg-gradient-to-t from-purple-500 to-blue-400">
         <div>
-          <p className="text-4xl">Count is {count}</p>
+          <p className="text-4xl">Count is: {count}</p>
         </div>
         <div className="flex flex-row gap-5">
           <button
