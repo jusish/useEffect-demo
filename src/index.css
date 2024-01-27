@@ -4,3 +4,8 @@
 @import 'tailwindcss/utilities';
 
 /* Your custom styles go here */
+
+
+.darkmode{
+  background-color: rgb(15, 0, 53);
+}
